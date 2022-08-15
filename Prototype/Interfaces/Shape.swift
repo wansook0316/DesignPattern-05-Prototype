@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+internal protocol Shape {
+
+    func draw() -> String
+
+    func moveOffset(dx: Int, dy: Int)
+
+}
