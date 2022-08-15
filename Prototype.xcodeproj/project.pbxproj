@@ -13,6 +13,9 @@
 		CE868A1328AA4C61000F1B7D /* DPPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE868A1228AA4C61000F1B7D /* DPPoint.swift */; };
 		CE868A1528AA4C66000F1B7D /* DPLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE868A1428AA4C66000F1B7D /* DPLine.swift */; };
 		CE868A1728AA4C6A000F1B7D /* DPGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE868A1628AA4C6A000F1B7D /* DPGroup.swift */; };
+		CE868A2828AA6F99000F1B7D /* NSLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE868A2528AA6F98000F1B7D /* NSLine.swift */; };
+		CE868A2928AA6F99000F1B7D /* NSPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE868A2628AA6F98000F1B7D /* NSPoint.swift */; };
+		CE868A2A28AA6F99000F1B7D /* NSGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE868A2728AA6F98000F1B7D /* NSGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +38,9 @@
 		CE868A1228AA4C61000F1B7D /* DPPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPPoint.swift; sourceTree = "<group>"; };
 		CE868A1428AA4C66000F1B7D /* DPLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPLine.swift; sourceTree = "<group>"; };
 		CE868A1628AA4C6A000F1B7D /* DPGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPGroup.swift; sourceTree = "<group>"; };
+		CE868A2528AA6F98000F1B7D /* NSLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLine.swift; sourceTree = "<group>"; };
+		CE868A2628AA6F98000F1B7D /* NSPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSPoint.swift; sourceTree = "<group>"; };
+		CE868A2728AA6F98000F1B7D /* NSGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 		CE868A0428AA3B47000F1B7D /* Prototype */ = {
 			isa = PBXGroup;
 			children = (
+				CE868A2B28AA6FFB000F1B7D /* Common */,
 				CE868A1828AA5598000F1B7D /* Pattern */,
 				CE868A1928AA55A7000F1B7D /* NSCopying */,
 				CE868A1A28AA55B1000F1B7D /* Struct */,
@@ -79,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				CE868A0E28AA4C55000F1B7D /* Prototype.swift */,
-				CE868A1028AA4C5A000F1B7D /* Shape.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -106,6 +112,7 @@
 		CE868A1928AA55A7000F1B7D /* NSCopying */ = {
 			isa = PBXGroup;
 			children = (
+				CE868A1E28AA6F7A000F1B7D /* Implementations */,
 			);
 			path = NSCopying;
 			sourceTree = "<group>";
@@ -115,6 +122,24 @@
 			children = (
 			);
 			path = Struct;
+			sourceTree = "<group>";
+		};
+		CE868A1E28AA6F7A000F1B7D /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				CE868A2628AA6F98000F1B7D /* NSPoint.swift */,
+				CE868A2528AA6F98000F1B7D /* NSLine.swift */,
+				CE868A2728AA6F98000F1B7D /* NSGroup.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		CE868A2B28AA6FFB000F1B7D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CE868A1028AA4C5A000F1B7D /* Shape.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,8 +203,11 @@
 				CE868A1328AA4C61000F1B7D /* DPPoint.swift in Sources */,
 				CE868A0F28AA4C55000F1B7D /* Prototype.swift in Sources */,
 				CE868A1128AA4C5A000F1B7D /* Shape.swift in Sources */,
+				CE868A2928AA6F99000F1B7D /* NSPoint.swift in Sources */,
 				CE868A1728AA4C6A000F1B7D /* DPGroup.swift in Sources */,
+				CE868A2A28AA6F99000F1B7D /* NSGroup.swift in Sources */,
 				CE868A0628AA3B47000F1B7D /* main.swift in Sources */,
+				CE868A2828AA6F99000F1B7D /* NSLine.swift in Sources */,
 				CE868A1528AA4C66000F1B7D /* DPLine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  DPGroup.swift
+//  NSGroup.swift
 //  Prototype
 //
 //  Created by Choiwansik on 2022/08/15.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal class DPGroup: NSObject {
+internal class NSGroup {
 
     internal convenience init(name: String) {
         self.init()
@@ -24,10 +24,10 @@ internal class DPGroup: NSObject {
     private var shapes = [Shape]()
 }
 
-extension DPGroup: Prototype {
+extension NSGroup: NSCopying {
 
-    internal func clone() -> NSObject {
-        let newGroup = DPGroup(name: self.name)
+    func copy(with zone: NSZone? = nil) -> Any { // NSCopying에서는 Any를 return
+        let newGroup = NSGroup(name: self.name)
 
         return self.shapes
             .compactMap { $0 as? Prototype } // 가독성 위해 분리
@@ -39,7 +39,7 @@ extension DPGroup: Prototype {
 
 }
 
-extension DPGroup: Shape {
+extension NSGroup: Shape {
 
     internal func draw() -> String {
         let infos = self.shapes
