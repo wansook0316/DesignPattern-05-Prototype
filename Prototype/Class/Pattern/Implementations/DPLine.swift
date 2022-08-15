@@ -1,5 +1,5 @@
 //
-//  NSLine.swift
+//  DPLine.swift
 //  Prototype
 //
 //  Created by Choiwansik on 2022/08/15.
@@ -7,35 +7,35 @@
 
 import Foundation
 
-internal class NSLine {
+internal class DPLine: NSObject {
 
-    internal convenience init(startPoint: NSPoint, endPoint: NSPoint) {
+    internal convenience init(startPoint: DPPoint, endPoint: DPPoint) {
         self.init()
         
         self.startPoint = startPoint
         self.endPoint = endPoint
     }
 
-    internal var startPoint: NSPoint = NSPoint()
-    internal var endPoint: NSPoint = NSPoint()
+    internal var startPoint: DPPoint = DPPoint()
+    internal var endPoint: DPPoint = DPPoint()
 }
 
-extension NSLine: NSCopying {
-    
-    func copy(with zone: NSZone? = nil) -> Any { // NSCopying에서는 Any를 return
+extension DPLine: Prototype {
+
+    internal func clone() -> NSObject {
         // Class이기 때문에 Deep copy 필요
-        guard let newStartPoint = self.startPoint.copy() as? NSPoint,
-              let newEndPoint = self.endPoint.copy() as? NSPoint else {
+        guard let newStartPoint = self.startPoint.clone() as? DPPoint,
+              let newEndPoint = self.endPoint.clone() as? DPPoint else {
             return NSObject()
         }
 
-        return NSLine(startPoint: newStartPoint,
+        return DPLine(startPoint: newStartPoint,
                       endPoint: newEndPoint)
     }
 
 }
 
-extension NSLine: Shape {
+extension DPLine: CLShape {
 
     internal func draw() -> String {
         return "LINE(start: \(self.startPoint.draw()), end: \(self.endPoint.draw()))"

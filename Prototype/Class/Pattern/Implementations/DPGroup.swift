@@ -15,13 +15,13 @@ internal class DPGroup: NSObject {
         self.name = name
     }
 
-    internal func add(shape: Shape) -> Self {
+    internal func add(shape: CLShape) -> Self {
         self.shapes.append(shape)
         return self
     }
 
     private var name: String = ""
-    private var shapes = [Shape]()
+    private var shapes = [CLShape]()
 }
 
 extension DPGroup: Prototype {
@@ -31,7 +31,7 @@ extension DPGroup: Prototype {
 
         return self.shapes
             .compactMap { $0 as? Prototype } // 가독성 위해 분리
-            .compactMap { $0.clone() as? Shape }
+            .compactMap { $0.clone() as? CLShape }
             .reduce(newGroup) { partialResult, shape in
                 partialResult.add(shape: shape)
             }
@@ -39,7 +39,7 @@ extension DPGroup: Prototype {
 
 }
 
-extension DPGroup: Shape {
+extension DPGroup: CLShape {
 
     internal func draw() -> String {
         let infos = self.shapes

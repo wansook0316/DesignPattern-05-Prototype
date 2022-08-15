@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		CE868A0628AA3B47000F1B7D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE868A0528AA3B47000F1B7D /* main.swift */; };
 		CE868A0F28AA4C55000F1B7D /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE868A0E28AA4C55000F1B7D /* Prototype.swift */; };
-		CE868A1128AA4C5A000F1B7D /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE868A1028AA4C5A000F1B7D /* Shape.swift */; };
+		CE868A1128AA4C5A000F1B7D /* CLShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE868A1028AA4C5A000F1B7D /* CLShape.swift */; };
 		CE868A1328AA4C61000F1B7D /* DPPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE868A1228AA4C61000F1B7D /* DPPoint.swift */; };
 		CE868A1528AA4C66000F1B7D /* DPLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE868A1428AA4C66000F1B7D /* DPLine.swift */; };
 		CE868A1728AA4C6A000F1B7D /* DPGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE868A1628AA4C6A000F1B7D /* DPGroup.swift */; };
 		CE868A2828AA6F99000F1B7D /* NSLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE868A2528AA6F98000F1B7D /* NSLine.swift */; };
 		CE868A2928AA6F99000F1B7D /* NSPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE868A2628AA6F98000F1B7D /* NSPoint.swift */; };
 		CE868A2A28AA6F99000F1B7D /* NSGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE868A2728AA6F98000F1B7D /* NSGroup.swift */; };
+		CE868A3028AA70EF000F1B7D /* STPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE868A2D28AA70EF000F1B7D /* STPoint.swift */; };
+		CE868A3128AA70EF000F1B7D /* STGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE868A2E28AA70EF000F1B7D /* STGroup.swift */; };
+		CE868A3228AA70EF000F1B7D /* STLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE868A2F28AA70EF000F1B7D /* STLine.swift */; };
+		CE868A3428AA71A8000F1B7D /* STShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE868A3328AA71A8000F1B7D /* STShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,13 +38,17 @@
 		CE868A0228AA3B47000F1B7D /* Prototype */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Prototype; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE868A0528AA3B47000F1B7D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CE868A0E28AA4C55000F1B7D /* Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototype.swift; sourceTree = "<group>"; };
-		CE868A1028AA4C5A000F1B7D /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		CE868A1028AA4C5A000F1B7D /* CLShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLShape.swift; sourceTree = "<group>"; };
 		CE868A1228AA4C61000F1B7D /* DPPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPPoint.swift; sourceTree = "<group>"; };
 		CE868A1428AA4C66000F1B7D /* DPLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPLine.swift; sourceTree = "<group>"; };
 		CE868A1628AA4C6A000F1B7D /* DPGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPGroup.swift; sourceTree = "<group>"; };
 		CE868A2528AA6F98000F1B7D /* NSLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLine.swift; sourceTree = "<group>"; };
 		CE868A2628AA6F98000F1B7D /* NSPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSPoint.swift; sourceTree = "<group>"; };
 		CE868A2728AA6F98000F1B7D /* NSGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSGroup.swift; sourceTree = "<group>"; };
+		CE868A2D28AA70EF000F1B7D /* STPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STPoint.swift; sourceTree = "<group>"; };
+		CE868A2E28AA70EF000F1B7D /* STGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STGroup.swift; sourceTree = "<group>"; };
+		CE868A2F28AA70EF000F1B7D /* STLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STLine.swift; sourceTree = "<group>"; };
+		CE868A3328AA71A8000F1B7D /* STShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +81,7 @@
 		CE868A0428AA3B47000F1B7D /* Prototype */ = {
 			isa = PBXGroup;
 			children = (
-				CE868A2B28AA6FFB000F1B7D /* Common */,
-				CE868A1828AA5598000F1B7D /* Pattern */,
-				CE868A1928AA55A7000F1B7D /* NSCopying */,
+				CE868A3528AA720B000F1B7D /* Class */,
 				CE868A1A28AA55B1000F1B7D /* Struct */,
 				CE868A0528AA3B47000F1B7D /* main.swift */,
 			);
@@ -120,6 +126,8 @@
 		CE868A1A28AA55B1000F1B7D /* Struct */ = {
 			isa = PBXGroup;
 			children = (
+				CE868A3628AA7218000F1B7D /* Common */,
+				CE868A2C28AA70DB000F1B7D /* Implementations */,
 			);
 			path = Struct;
 			sourceTree = "<group>";
@@ -137,7 +145,35 @@
 		CE868A2B28AA6FFB000F1B7D /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				CE868A1028AA4C5A000F1B7D /* Shape.swift */,
+				CE868A1028AA4C5A000F1B7D /* CLShape.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CE868A2C28AA70DB000F1B7D /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				CE868A2D28AA70EF000F1B7D /* STPoint.swift */,
+				CE868A2F28AA70EF000F1B7D /* STLine.swift */,
+				CE868A2E28AA70EF000F1B7D /* STGroup.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		CE868A3528AA720B000F1B7D /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				CE868A2B28AA6FFB000F1B7D /* Common */,
+				CE868A1828AA5598000F1B7D /* Pattern */,
+				CE868A1928AA55A7000F1B7D /* NSCopying */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		CE868A3628AA7218000F1B7D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CE868A3328AA71A8000F1B7D /* STShape.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -202,12 +238,16 @@
 			files = (
 				CE868A1328AA4C61000F1B7D /* DPPoint.swift in Sources */,
 				CE868A0F28AA4C55000F1B7D /* Prototype.swift in Sources */,
-				CE868A1128AA4C5A000F1B7D /* Shape.swift in Sources */,
+				CE868A1128AA4C5A000F1B7D /* CLShape.swift in Sources */,
 				CE868A2928AA6F99000F1B7D /* NSPoint.swift in Sources */,
 				CE868A1728AA4C6A000F1B7D /* DPGroup.swift in Sources */,
 				CE868A2A28AA6F99000F1B7D /* NSGroup.swift in Sources */,
 				CE868A0628AA3B47000F1B7D /* main.swift in Sources */,
+				CE868A3028AA70EF000F1B7D /* STPoint.swift in Sources */,
+				CE868A3228AA70EF000F1B7D /* STLine.swift in Sources */,
+				CE868A3428AA71A8000F1B7D /* STShape.swift in Sources */,
 				CE868A2828AA6F99000F1B7D /* NSLine.swift in Sources */,
+				CE868A3128AA70EF000F1B7D /* STGroup.swift in Sources */,
 				CE868A1528AA4C66000F1B7D /* DPLine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

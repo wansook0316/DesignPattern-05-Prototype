@@ -9,8 +9,8 @@ import Foundation
 
 internal func main() {
 //    ProtoType패턴을사용한테스트()
-    NSCopying을사용한테스트()
-
+//    NSCopying을사용한테스트()
+    Struct를사용한테스트()
 }
 
 internal func ProtoType패턴을사용한테스트() {
@@ -82,6 +82,42 @@ internal func NSCopying을사용한테스트() {
             .add(shape: line2)
             .add(shape: line3)
             .add(shape: line4)
+    print(rect.draw())
+}
+
+internal func Struct를사용한테스트() {
+    // Point
+    let point1 = STPoint(x: 0, y: 0)
+    print(point1.draw())
+
+    let point2 = STPoint(x: 100, y: 0)
+    print(point2.draw())
+
+    // Line
+    let line1 = STLine(startPoint: point1,
+                       endPoint: point2)
+    print(line1.draw())
+
+    // Group(rectangle)
+    let lineCopy = line1 // 할당하면서 copy가 끝남
+
+    let point3 = STPoint(x: 100, y: 100)
+    let point4 = STPoint(x: 0, y: 100)
+
+    let line2 = STLine(startPoint: point2,
+                       endPoint: point3)
+    let line3 = STLine(startPoint: point3,
+                       endPoint: point4)
+    let line4 = STLine(startPoint: point4,
+                       endPoint: point1)
+
+    // 함수 리턴시 복사하므로 chaining 불가
+    var rect = STGroup(name: "Rect")
+    rect.add(shape: lineCopy)
+    rect.add(shape: line2)
+    rect.add(shape: line3)
+    rect.add(shape: line4)
+
     print(rect.draw())
 }
 

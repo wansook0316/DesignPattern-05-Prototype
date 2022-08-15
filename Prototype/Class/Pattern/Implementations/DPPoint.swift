@@ -1,5 +1,5 @@
 //
-//  NSPoint.swift
+//  DPPoint.swift
 //  Prototype
 //
 //  Created by Choiwansik on 2022/08/15.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal class NSPoint {
+internal class DPPoint: NSObject {
 
     internal convenience init(x: Int, y: Int) {
         self.init()
@@ -20,15 +20,15 @@ internal class NSPoint {
     internal var y: Int = .zero
 }
 
-extension NSPoint: NSCopying {
+extension DPPoint: Prototype {
 
-    func copy(with zone: NSZone? = nil) -> Any { // NSCopying에서는 Any를 return
-        return NSPoint(x: self.x, y: self.y)
+    internal func clone() -> NSObject {
+        return DPPoint(x: self.x, y: self.y)
     }
 
 }
 
-extension NSPoint: Shape {
+extension DPPoint: CLShape {
 
     internal func draw() -> String {
         return "POINT(x: \(self.x), y: \(self.y))"

@@ -1,5 +1,5 @@
 //
-//  Shape.swift
+//  CLShape.swift
 //  Prototype
 //
 //  Created by Choiwansik on 2022/08/15.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal protocol Shape {
+internal protocol CLShape: AnyObject {
 
     func draw() -> String
 
